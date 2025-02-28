@@ -14,7 +14,7 @@ This project decentralizes the traditional carpooling system by leveraging **blo
 ![Remix IDE](assets/remix.png)
 
 ### 2. Ganache Blockchain Setup
-![Ganache Setup](assets/ganache-.png)
+![Ganache Setup](assets/ganache.png)
 
 ### 3.Login panel
 ![Login](assets/blockchain1.png)
@@ -22,7 +22,7 @@ This project decentralizes the traditional carpooling system by leveraging **blo
 ### 4.New user
 ![Login](assets/blockchain3.png)
 
-###5.User dashboard panel
+### 5.User dashboard panel
 ![User](assets/blockchain4.png)
 
 
