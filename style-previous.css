@@ -1,0 +1,650 @@
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    font-size: 20px;
+    color:#060606;
+}
+
+.highlight
+{
+    color:red !important;
+    background-color: lightyellow !important;
+}
+.btn, .btn_logout
+{
+background-color: antiquewhite;
+border:black solid 1px;
+width:150px;
+display: inline-block;
+margin-left: 20px;
+padding: 5px;
+border-radius: 5px;
+text-align: center;
+text-decoration: none;
+margin:15px;
+}
+
+.btn_logout
+{
+background-color:black !important;
+color: white;
+}
+/* styles.css */
+
+h1{
+    background-color:#f1c40f;
+    color:#0e0c0c;
+    font-size: 70px;
+    font-family: cursive;
+    font-weight: 800;
+    /* margin: 100px; */
+    /* margin-top: 500px; */
+}
+
+body {
+    
+    /* background-color: #f9f9f9; */
+    color: #0e0c0c;
+    background: url(bg.jpg);
+    font-family: cursive;
+    font-size: 25px;
+}
+body a{
+    color: #0e0c0c;
+    font-family: cursive;
+    font-size: 25px;
+    text-decoration: none;
+}
+header {
+    font-family: cursive;
+    font-size: 25px;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav a {
+    font-family: cursive;
+    font-size: 25px;
+    color: #060606;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 2em;
+    border: 1px solid #dddddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: cursive;
+    font-size: 25px;
+}
+
+
+
+hr {
+    border: 1px solid #dddddd;
+}
+
+.btn {
+    margin: 15px;
+    background-color: #f1c40f;
+    color: #141313;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: cursive;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.btn_logout {
+    background-color: #e74c3c;
+    color: #060606;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cntview {
+    font-weight: bold;
+    color: #2ecc71;
+}
+/* .newuser{
+    border:2px solid black;
+    padding:50px;
+    align-items: center;
+/* } */
+/* .uname,.ucontact,.utitle{
+    margin: 10px;
+}  */
+ form{
+    margin: 0 auto;
+ }
+ .one,.two{
+    margin: 20px;
+    
+ }
+ .title {
+    display: inline-block;
+    width: 150px;
+    vertical-align: top;
+  }
+  
+  input[type="text"] {
+    border-radius: 10px; /* adjust the value to your desired radius */
+    padding: 10px; /* add some padding for better usability */
+    border: 1px solid #ccc; /* add a border for better visibility */
+    width: calc(100% - 160px); /* make the input box full-width */
+    box-sizing: border-box; /* ensure the input box doesn't overflow */
+    display: inline-block;
+    vertical-align: top;
+    /* font-size: 25px; adjust font size to match the rest of the page */
+    font-weight: 800; /* adjust font weight to match the rest of the page */
+    color: #060606; /* adjust font color to match the rest of the page */
+  }
+
+
+
+
+  /* *********************************************************************** */
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    font-size: 20px;
+    color: #060606;
+}
+
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    color: #0e0c0c;
+    background: url(bg.jpg);
+    font-family: cursive;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+/* Fixed Header */
+.header {
+    background-color: #f1c40f;
+    color: #0e0c0c;
+    font-size: 70px;
+    font-family: cursive;
+    font-weight: 800;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Back Button Container (Right-Aligned & Visible) */
+.back-container {
+    display: flex;
+    justify-content: flex-end; /* Moves it to the extreme right */
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+    padding-right: 30px; /* Adjust right spacing */
+    position: relative; /* Ensure it’s in the normal document flow */
+    z-index: 10; /* Ensure it is on top */
+}
+
+/* Go Back Button Styling */
+.btn-back {
+    background-color: #f1c40f;
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.btn-back:hover {
+    background-color: #d4ac0d;
+}
+
+/* Form Container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Label & Input Row */
+.field-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0; /* More space between fields */
+    padding: 10px 15px;
+}
+
+/* Label Styling */
+label {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: cursive;
+    width: 40%;
+    text-align: left;
+}
+
+/* Input Field Styling */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select {
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    width: 55%;
+    box-sizing: border-box;
+    font-weight: 800;
+    color: #060606;
+    font-size: 18px;
+}
+
+/* Full-Width Box (For Hash Address) */
+.full-width {
+    grid-column: span 2;
+    width: 100%;
+}
+
+/* Submit Button */
+input[type="button"] {
+    background-color: #f1c40f;
+    color: black;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    margin-top: 25px;
+}
+
+input[type="button"]:hover {
+    background-color: #d4ac0d;
+}
+
+
+
+
+
+  /* ******************************************************************************* */
+
+
+
+  /* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    font-size: 20px;
+    color: #060606;
+}
+
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    color: #0e0c0c;
+    background: url(bg.jpg);
+    font-family: cursive;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    justify-content: center; /* Centers everything vertically */
+}
+
+/* Fixed Header */
+.header {
+    background-color: #f1c40f;
+    color: #0e0c0c;
+    font-size: 70px;
+    font-family: cursive;
+    font-weight: 800;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Main Content Wrapper (Centers login form) */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Keeps content in center */
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    flex-grow: 1;
+}
+
+/* New User Button (Right-Aligned) */
+.newuser-container {
+    display: flex;
+    justify-content: flex-end; /* Moves it to the extreme right */
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 50px;
+    position: absolute;
+    top: 100px; /* Adjust this value if needed */
+    right: 0;
+}
+
+/* New User Button Styling */
+.btn-newuser {
+    background-color: #f1c40f;
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    margin-top: 50px;
+}
+
+.btn-newuser:hover {
+    background-color: #d4ac0d;
+}
+
+/* Login Grid (Centered) */
+.login-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 50px;
+    align-items: center;
+}
+
+/* Fieldset Styling */
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Buttons */
+.btn, .btn_logout, input[type="button"] {
+    background-color: antiquewhite;
+    border: black solid 1px;
+    min-width: 180px;
+    max-width: 100%;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: cursive;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 15px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.btn {
+    background-color: #f1c40f;
+    color: #141313;
+}
+
+.btn:hover {
+    background-color: #d4ac0d;
+}
+
+.btn_logout {
+    background-color: black !important;
+    color: white;
+}
+
+.btn_logout:hover {
+    background-color: #333;
+}
+
+/* Label & Input Alignment */
+.field-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+/* Label Styling */
+label {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: cursive;
+    margin-bottom: 5px;
+}
+
+/* Input Field Styling */
+input[type="text"], input[type="number"], input[type="date"], input[type="time"], select {
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 800;
+    color: #060606;
+    font-size: 18px;
+}
+
+/* Button Styling */
+input[type="button"] {
+    background-color: #f1c40f;
+    color: black;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+input[type="button"]:hover {
+    background-color: #d4ac0d;
+}
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    font-size: 20px;
+    color: #060606;
+}
+
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    color: #0e0c0c;
+    background: url(bg.jpg);
+    font-family: cursive;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+/* Form Container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 40px;
+    
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Label & Input Row */
+.field-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0; /* More space between fields */
+    padding: 10px 15px;
+}
+
+/* Label Styling */
+label {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: cursive;
+    width: 40%;
+    text-align: left;
+}
+
+/* Input Field Styling */
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    width: 55%;
+    box-sizing: border-box;
+    font-weight: 800;
+    color: #060606;
+    font-size: 18px;
+}
+
+/* Full-Width Box (For Hash Address) */
+.full-width {
+    grid-column: span 2;
+    width: 100%;
+}
+
+/* Submit Button */
+input[type="button"] {
+    background-color: #f1c40f;
+    color: black;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    margin-top: 25px;
+}
+
+input[type="button"]:hover {
+    background-color: #d4ac0d;
+}
+
+
+
+/* Back Button Container (Right-Aligned & Visible) */
+.back-container {
+    display: flex;
+    justify-content: flex-end; /* Moves it to the extreme right */
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+    padding-right: 30px; /* Adjust right spacing */
+    position: relative; /* Ensure it’s in the normal document flow */
+    z-index: 10; /* Ensure it is on top */
+}
+
+/* Go Back Button Styling */
+.btn-back {
+    background-color: #f1c40f;
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.btn-back:hover {
+    background-color: #d4ac0d;
+}

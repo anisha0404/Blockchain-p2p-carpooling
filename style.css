@@ -1,0 +1,257 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    font-size: 20px;
+    color: #060606;
+}
+
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    color: #0e0c0c;
+    background: url(bg.jpg);
+    font-family: cursive;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+/* Fixed Header */
+.header {
+    background-color: #f1c40f;
+    color: #0e0c0c;
+    font-size: 70px;
+    font-family: cursive;
+    font-weight: 800;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+/* Login Grid (2 Boxes Side by Side) */
+.login-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 50px; /* Space between login boxes */
+    width: 100%;
+    max-width: 800px;
+    margin-top: 120px; /* Pushes grid below the fixed header */
+    align-items: center;
+}
+/* New User Button Container (Extreme Right) */
+/* New User Button Container (Right-Aligned, After Heading) */
+.newuser-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns button to the extreme right */
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px; /* Adds space below the heading */
+    padding-right: 20px; /* Ensures it's at the right edge */
+}
+
+/* New User Button Styling */
+.btn-newuser {
+    background-color: #f1c40f;
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    margin-top: 50px;
+    position:relative;
+    max-width: 100%;
+    margin-right: 30px;
+}
+
+.btn-newuser:hover {
+    background-color: #d4ac0d;
+}
+
+
+/* Back Button Container (Right-Aligned & Visible) */
+.back-container {
+    display: flex;
+    justify-content: flex-end; /* Moves it to the extreme right */
+    width: 100%;
+    max-width: 100%;
+    margin-top: 220px;
+    margin-right: 30px; /* Adjust right spacing */
+    position: relative;/*  Ensure it’s in the normal document flow */ 
+    z-index: 10; /* Ensure it is on top */
+}
+
+/* Go Back Button Styling */
+.btn-back {
+    background-color: #f1c40f;
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.btn-back:hover {
+    background-color: #d4ac0d;
+}
+
+/* Form Container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Label & Input Row */
+.field-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0; /* More space between fields */
+    padding: 10px 15px;
+}
+
+/* Label Styling */
+label {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: cursive;
+    width: 60%;
+    text-align: left;
+}
+
+/* Input Field Styling */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select {
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 800;
+    color: #060606;
+    font-size: 18px;
+}
+
+/* Full-Width Box (For Hash Address) */
+.full-width {
+    grid-column: span 2;
+    width: 100%;
+}
+
+/* Submit Button */
+input[type="button"] {
+    background-color: #f1c40f;
+    color: black;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    margin-top: 25px;
+}
+
+input[type="button"]:hover {
+    background-color: #d4ac0d;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: white; /* Sets background to white */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+    width: 100%;
+}
+
+/* User Dashboard Panel - Button Container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+    margin-top: 150px; /* Space below header */
+    width: 100%;
+}
+
+/* Dashboard Buttons */
+.btn, .btn_logout {
+    background-color: #f1c40f;
+    border: black solid 1px;
+    min-width: 300px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d4ac0d;
+}
+
+/* Logout Button */
+.btn_logout {
+    background-color: black !important;
+    color: white;
+}
+
+.btn_logout:hover {
+    background-color: #333;
+}
+
+/* Ensures Buttons are Centered on All Screens */
+@media (max-width: 768px) {
+    .button-container {
+        margin-top: 100px; /* Adjusts spacing for smaller screens */
+    }
+
+    .btn, .btn_logout {
+        min-width: 250px;
+    }
+}
+

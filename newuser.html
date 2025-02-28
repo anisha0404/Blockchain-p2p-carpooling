@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New User</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script src="node_modules/web3.js-browser/build/web3.js"></script>
+    <script src="node_modules/web3/dist/web3.min.js"></script>
+    <script src="web3connection.js"></script> 
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+        $(document).ready(function(){
+            $("#btn_action").click(function(){
+                var hashcode = $("#hashaddress").val();
+                var uname = $("#username").val();
+                var uemail = $("#useremail").val();
+                var ucontact = $("#usercontact").val();
+
+                myContract.methods.RegisterUserAccount(hashcode, uname, ucontact, uemail).send({from: hashcode, gas: '3000000'});
+
+                Cookies.set('hashcodecp', hashcode, {expires: 14});
+                Cookies.set('usernamecp', uname, {expires: 14});
+
+                window.location.replace('userdashboardpanelchoice.html');
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Fixed Header -->
+    <div class="header">CarPooling</div>
+
+    <!-- Back Button (Right-Aligned) -->
+    
+
+    <!-- User Registration Form -->
+    
+    <div class="back-container">
+        <a class="btn-back" href="index.html">Go Back</a>
+    </div>
+        <form class="form-container">
+            
+            <div class="field-container">
+                <label for="username">User Name</label>
+                <input type="text" id="username" placeholder="Enter your name" />
+            </div>
+
+            <div class="field-container">
+                <label for="useremail">User Email</label>
+                <input type="email" id="useremail" placeholder="Enter your email" />
+            </div>
+
+            <div class="field-container">
+                <label for="usercontact">User Contact No</label>
+                <input type="text" id="usercontact" placeholder="Enter your contact number" />
+            </div>
+
+            <div class="field-container full-width">
+                <label for="hashaddress">HashCode Address</label>
+                <input type="text" id="hashaddress" placeholder="Enter your hashcode" />
+            </div>
+
+            <div class="full-width">
+                <input type="button" id="btn_action" value="Create Account" />
+            </div>
+        </form>
+        
+   
+
+</body>
+</html>
+
+<!-- <html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+  
+    
+  <script src="node_modules/web3.js-browser/build/web3.js"></script>
+  <script src="node_modules/web3/dist/web3.min.js"></script>
+  <script src="web3connection.js"></script> 
+  <link rel="stylesheet" href="style.css" />
+    <script>
+
+        $(document).ready(function(){
+           $("#btn_action").click(function(){
+        
+                //Cookies.set()
+                //alert("working");
+                var hashcode=$("#hashaddress").val();
+                var uname=$("#username").val();
+                var uemail=$("#useremail").val();
+                var ucontact=$("#usercontact").val();
+			
+
+      
+				myContract.methods.RegisterUserAccount(hashcode,uname,ucontact,uemail).send({from : hashcode, gas : '3000000'});
+
+                Cookies.set('hashcodecp',hashcode,{expires : 14});
+                Cookies.set('usernamecp',uname,{expires : 14});
+        
+                
+
+
+
+                window.location.replace('userdashboardpanelchoice.html');
+        
+            });
+        
+        });
+        
+        
+        </script>
+
+
+</head>
+<body>
+    <div class="header">CarPooling</div>
+ <h1 class="headingh">CarPooling</h1> 
+<hr />
+<div align="right">
+    <a class="btn" href="index.html">Go Back</a>
+  </div>
+<form class="newuser">
+    <div class="uname">
+        <span class="title">User Name</span>
+        <input type="text" id="username" placeholder="Write Here" />
+    </div>
+
+    <div class="uemail">
+        <span class="title">User Email</span>
+        <input type="text" id="useremail" placeholder="Write Here" />
+    </div>
+
+    <div class="ucontact">
+        <span class="title">User Contact No</span>
+        <input type="text" id="usercontact" placeholder="Write Here" />
+    </div>
+
+    <div class="hashaddress">
+        <span class="title">HashCode Address</span>
+        <input type="text" style="width: 400px;" id="hashaddress" placeholder="Write Here" />
+    </div>
+    <div class="utitle>
+        <span class="title"></span>
+        <input type="button"  id="btn_action" value="Create Account" />
+    </div>
+
+</form>
+
+
+</body>
+
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New User</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">CarPooling</div>
+     Back Button (Aligned to Right) -->
+    <!-- <div class="back-container">
+        <a href="index.html" class="btn-back">Go Back</a>
+    </div> -->
+
+    <!-- User Registration Form -->
+    <!-- <fieldset>
+        <legend>Create New User</legend>
+        <form class="form-container">
+            <div class="field-container">
+                <label for="username">User Name</label>
+                <input type="text" id="username" placeholder="Write Here" />
+            </div>
+
+            <div class="field-container">
+                <label for="useremail">User Email</label>
+                <input type="email" id="useremail" placeholder="Write Here" />
+            </div>
+
+            <div class="field-container">
+                <label for="usercontact">User Contact No</label>
+                <input type="number" id="usercontact" placeholder="Write Here" />
+            </div>
+
+            <div class="field-container full-width">
+                <label for="hashaddress">HashCode Address</label>
+                <input type="text" id="hashaddress" placeholder="Write Here" />
+            </div>
+
+            <div class="full-width">
+                <input type="button" id="btn_action" value="Create Account" />
+            </div>
+        </form>
+    </fieldset>
+
+</body>
+</html> --> 
