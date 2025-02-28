@@ -10,7 +10,25 @@ This project decentralizes the traditional carpooling system by leveraging **blo
 - Web3.js integration for interaction with blockchain
 
 ---
+1. Remix IDE Smart Contract Deployment
+![Remix IDE](assets/remix.png)
 
+### 2. Ganache Blockchain Setup
+![Ganache Setup](assets/ganache-.png)
+
+### 3.Login panel
+![Login](assets/blockchain1.png)
+
+### 4.New user
+![Login](assets/blockchain3.png)
+
+###5.User dashboard panel
+![User](assets/blockchain4.png)
+
+
+
+
+---
 ## Steps to Run
 
 ### **1. Setting Up Remix IDE**
